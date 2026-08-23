@@ -17,7 +17,7 @@ Análisis completo para la empresa DS Airlines que aborda dos problemas:
 - Costo operativo minimizado: 4,965 m.u.
 
 **Segmentación (K-Means, K=2):**
-- Cluster 0: Pasajeros High-Value → Acceso a Sala VIP
+- Cluster 0: Pasajeros VIP → Acceso a Sala VIP
 - Cluster 1: Pasajeros Estándar → Voucher de Comida
 - Silueta: 0.60 | PCA explica 64.46% de variabilidad
 
@@ -31,15 +31,16 @@ Análisis completo para la empresa DS Airlines que aborda dos problemas:
 ## 📁 Estructura
 
 ```
-├── docs/
-│   └── Informe_TPI_2026.pdf          ⭐ Informe técnico completo
+
 ├── notebooks/
-│   ├── 01_EDA_Vuelos.ipynb
-│   ├── 02_Prediccion_Demoras.ipynb
-│   ├── 03_EDA_Clientes.ipynb
-│   └── 04_Clustering_Clientes.ipynb
-├── requirements.txt
-└── README.md
+│   ├── CLUSTERS.ipynb
+│   ├── EDAclientes.ipynb
+│   ├── KNN.ipynb
+│   ├── PCA.ipynb
+│   └── TP_AnalisisDeDatos.ipynb
+├── Informe.pdf       ⭐ Informe técnico completo
+├── README.md 
+└── requirements.txt
 ```
 
 ## 🚀 Cómo ejecutar
@@ -68,24 +69,24 @@ jupyter notebook
 ## 📊 Modelos Evaluados
 
 **Predicción de Demoras:**
-- Regresión Logística ✅ (Seleccionado)
+- Regresión Logística (Elegido)
 - Árbol de Decisión
 - K-Nearest Neighbors
 - Análisis Discriminante Lineal
 
 **Clustering:**
-- K-Means (Seleccionado)
+- K-Means (Elegido)
 - Clustering Jerárquico
 - Clustering Bietápico
-- PCA para análisis de varianza
+- PCA para análisis de los clusters
 
 ## 📚 Lo que aprendí
 
-- Modelado supervisado con ajuste de puntos de corte y matrices de costos
+- Modelado supervisado
 - Algoritmos no supervisados (K-Means, clustering jerárquico, PCA)
 - Evaluación de modelos con múltiples métricas
 - Integración de Python y SPSS para análisis completo
-- Documentación técnica en LaTeX
+- Documentación técnica en LaTeX.
 
 ## 👥 Equipo
 
